@@ -67,6 +67,7 @@
 								<input type="datetime-local" class="form-control" id="novo_horario" name="novo_horario" >
 								<input type="hidden" name="tipo" value="adicionar_horario">
 							    <input type="hidden" name="id_horario" value="null">
+								<input type="hidden" name="id_medico" value="<?php echo $id_medico?>">
 							  </div>
 								<div class="row justify-content-center">
 							  <button type="submit" class="btn btn-primary" name="horario">Adicionar horários</button>
@@ -108,7 +109,18 @@
 										  <div class="ml-auto align-items-end" style="margin-right: 25px">
 											  <button type="submit" form="<?php echo "horarios".$row_horario['id'];?>" name="horario" style="color: red" class="btn btn-link">Remover</button>
 										  </div>
-								<?php endif ?> 
+								<?php endif?>
+								  <?php
+									  if ($row_horario['horario_agendado'] == 0): ?>
+								  		  
+								  		  <form action="../model/att_horario.php" method="post" id="<?php echo "horarios".$row_horario['id'];?>">
+											  <input type="hidden" name="id_horario" value="<?php echo $row_horario['id'];?>">
+											  <input type="hidden" name="tipo" value="adicionar_horario">
+										  </form>
+										  <div class="ml-auto align-items-end" style="margin-right: 25px">
+											  <button type="submit" form="<?php echo "horarios".$row_horario['id'];?>" name="horario" style="color: green" class="btn btn-link">Adicionar</button>
+										  </div>
+								<?php endif?> 
 							  </div>
 							  <hr/>
 						  	<?php endwhile; ?>
