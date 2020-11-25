@@ -1,0 +1,78 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Cadastrar médico</title>
+  </head>
+  <body style="background: #E4E4E4; ">
+    
+	  
+	<div class="container-fluid" style="background: #0094CF">
+		<br>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 float-left " >
+				<div class="float-right">
+					<button style="color: #004768" type="button" class="btn btn-light">Cadastro de médico</button>
+				</div>	
+			</div>
+			<div class="col-md-2"></div>
+			</div>
+			<br>
+	</div>
+	
+	  <br><br>
+	  
+	  
+	  <div class="container" style="background-color: #FFFFFF">
+		  <div class="text-center"  style="color: #0094CF">
+				  <br>
+				  <h3>Cadastro de médico</h3>
+				  <br>
+			  </div>
+		  <div class="col-md-6 container">
+			  <form action="../model/send_medic.php" method="post" >
+					  <div class="form-group">
+						  <label for="nome">Nome</label>
+						  <input type="text" id="nomemedico" name="nome" class="form-control col-xs-4" placeholder="Insira o nome do profissional" required>
+					  </div>
+						  
+					  <div class="form-group">
+						  <br>
+						  <label for="email">Email</label>
+						  <input type="email" id="emailmedico" name="email" class="form-control col-xs-4" placeholder="exemplo@dominio.com.br" required> 
+					  </div>
+						  <br>
+					  <div class="form-group">
+						  <label for="senha">Senha</label>
+						  <input type="password" id="senhamedico" name="senha" class="form-control col-xs-4" placeholder="Escolha uma senha forte e segura" required>
+					  </div>
+						  <br>
+					  <div class="row justify-content-center">
+							  <button type="submit" class="btn btn-primary" name="cadastrar">Realizar cadastro</button>
+						  <br>
+					  </div>
+						  
+				  </form>
+						  
+						  </div>
+						  
+						  <div class="text-center"  style="color: #0094CF">
+							  <a href="../index.php"><button type="button" class="btn btn-link">Voltar para a página inicial</button></a>
+							  <br>
+						  </div>
+						  <br>
+		  </div> 
+	  
+	  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
+</html>
