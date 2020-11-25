@@ -24,8 +24,10 @@ if (isset($_POST["horario"])){
 				
 			} else {
 				if ($tipo == "adicionar_horario"){
-					$data = date_create($_POST['novo_horario']);  
-					$result = "INSERT INTO medicos (nome,email,senha) VALUES('$nome','$email','$senha')" or die ("Banco de dados inativo");
+					
+					$id_medico = $_POST['id_medico'];
+					$data = $_POST['novo_horario'];  
+					$result = "INSERT INTO horario (id_medico,data_horario,horario_agendado) VALUES('$id_medico','$data','0')" or die ("Banco de dados inativo");
 					$resultado = mysqli_query($conn,$result);
 					header('location: ../index.php');
 				} else {
