@@ -126,7 +126,7 @@
 								  		  
 								  		  <form action="../model/att_horario.php" method="post" id="<?php echo "horarios".$row_horario['id'];?>">
 											  <input type="hidden" name="id_horario" value="<?php echo $row_horario['id'];?>">
-											  <input type="hidden" name="tipo" value="adicionar_horario">
+											  <input type="hidden" name="tipo" value="adicionar_agendamento">
 										  </form>
 										  <div class="ml-auto align-items-end" style="margin-right: 25px">
 											  <button type="submit" form="<?php echo "horarios".$row_horario['id'];?>" name="horario" style="color: green" class="btn btn-link">Adicionar</button>
