@@ -24,8 +24,19 @@
     
 	  
 	<div class="container-fluid" style="background: #0094CF">
+		<div class="container">
 		<br>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 float-left " >
+				<div class="float-right">
+					<a href="view/cadastraMedico.html"><button style="color:#004768" type="button" class="btn btn-light">Cadastro de médicos</button></a>
+				</div>	
+			</div>
+			<div class="col-md-2"></div>
+			</div>
 			<br>
+			</div>
 	</div>
 	
 	  <br><br>
